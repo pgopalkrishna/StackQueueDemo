@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Threading;
 
 namespace StackQueueDemo
 {
@@ -57,7 +56,6 @@ namespace StackQueueDemo
             while (s.Count > 0)
             {
                 Console.WriteLine(s.Pop());
-                //Thread.Sleep(1000);
             }
         }
         public static void PrintQueue(Queue q, bool retainFlag = true)
@@ -66,7 +64,6 @@ namespace StackQueueDemo
                 while (q.Count > 0)
                 {
                     Console.WriteLine(q.Dequeue());
-                    //Thread.Sleep(1000);
                 }
             for (int i = 1; i <= q.Count; i++)
             {
